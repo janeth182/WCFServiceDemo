@@ -20,9 +20,9 @@ namespace WcfService1
         [DataMember]
         public string Email { get; set; }
     }
-    [ServiceContract]
-    public interface IWCFRest
-    {
+    //[ServiceContract]
+    //public interface IWCFRest
+    //{
         [OperationContract]
         [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, UriTemplate = "show/json/{name}")]
         List<User> ShowJson(string name);
