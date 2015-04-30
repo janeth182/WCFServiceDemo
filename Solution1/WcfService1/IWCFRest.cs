@@ -21,15 +21,15 @@ namespace WcfService1
         public string Email { get; set; }
     }
     [ServiceContract]
-    //public interface IWCFRest
-    //{
-    //    [OperationContract]
-    //    [WebInvoke(Method="GET",ResponseFormat=WebMessageFormat.Json,UriTemplate="show/json/{name}")]
-    //    List<User> ShowJson(string name);
+    public interface IWCFRest
+    {
+        [OperationContract]
+        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, UriTemplate = "show/json/{name}")]
+        List<User> ShowJson(string name);
 
-    //    [OperationContract]
-    //    [WebInvoke(Method="GET",ResponseFormat=WebMessageFormat.Xml,UriTemplate="show/xml/{name}")]
-    //    List<User> ShowXml(string name);
+        [OperationContract]
+        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Xml, UriTemplate = "show/xml/{name}")]
+        List<User> ShowXml(string name);
         
     }
 }
