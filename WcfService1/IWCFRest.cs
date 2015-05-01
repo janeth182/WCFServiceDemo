@@ -11,8 +11,8 @@ namespace WcfService1
     // NOTA: puede usar el comando "Rename" del menú "Refactorizar" para cambiar el nombre de interfaz "IWCFRest" en el código y en el archivo de configuración a la vez.
 
     [DataContract]
-    //public class User
-    //{
+    public class User
+    {
         [DataMember]
         public int id { get; set; }
         [DataMember]
